@@ -12,4 +12,5 @@ mkdir -pv $LFS/tools
 groupadd lfs
 useradd -s /bin/bash -g lfs -m -k /dev/null lfs
 echo "please enter a password for the lfs user"
-passwd
+passwd lfs
+echo "now run su - lfs and then run 6.sh"
