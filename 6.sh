@@ -1,3 +1,4 @@
+export LFS=/mnt/lfs
 echo "exec env -i HOME=$HOME TERM=$TERM PS1='\u:\w\$ ' /bin/bash" > ~/.bash_profile
 echo "set +h" > ~/.bash_profile
 echo "umask 022" >> ~/.bash_profile
@@ -9,3 +10,4 @@ echo "PATH=$LFS/tools/bin:$PATH" >> ~/.bash_profile
 echo "CONFIG_SITE=$LFS/usr/share/config.site" >> ~/.bash_profile
 echo "export LFS LC_ALL LFS_TGT PATH CONFIG_SITE" >> ~/.bash_profile
 source ~/.bash_profile
+
