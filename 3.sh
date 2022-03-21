@@ -1,3 +1,4 @@
+export LFS=/mnt/lfs
 mkdir -pv $LFS/{ect,var} $LFS/usr/{bin,lib,sbin}
 
 for i in bin lib sbin; do
