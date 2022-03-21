@@ -6,3 +6,8 @@ done
 case $(uname -m) in
   x86_64) mkdir -pv $LFS/lib64 ;;
 esac
+
+mkdir -pv $LFS/tools
+
+groupadd lfs
+useradd -s /bin/bash -g lfs -m -k /dev/null lfs
