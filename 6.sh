@@ -8,3 +8,4 @@ echo "if [ ! -L /bin ]; then PATH=/bin:$PATH; fi" >> ~/.bash_profile
 echo "PATH=$LFS/tools/bin:$PATH" >> ~/.bash_profile
 echo "CONFIG_SITE=$LFS/usr/share/config.site" >> ~/.bash_profile
 echo "export LFS LC_ALL LFS_TGT PATH CONFIG_SITE" >> ~/.bash_profile
+source ~/.bash_profile
