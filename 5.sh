@@ -13,4 +13,12 @@ groupadd lfs
 useradd -s /bin/bash -g lfs -m -k /dev/null lfs
 echo "please enter a password for the lfs user"
 passwd lfs
+
+chown -v lfs $LFS/{usr{,/*},lib,var,etc,bin,sbin,tools}
+case $(uname -m) in
+  x86_64) chown -v lfs $LFS/lib64 ;;
+esac
+
+chown -v lfs $LFS/sources
+
 echo "now run su - lfs and then run 6.sh"
