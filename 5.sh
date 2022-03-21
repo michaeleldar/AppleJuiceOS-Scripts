@@ -11,3 +11,5 @@ mkdir -pv $LFS/tools
 
 groupadd lfs
 useradd -s /bin/bash -g lfs -m -k /dev/null lfs
+echo "please enter a password for the lfs user"
+passwd
